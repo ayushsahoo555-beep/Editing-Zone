@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, ArrowUpRight, Captions, Check, Clapperboard, Clock, Copy, Film, Instagram, Mail, Moon, Music2, Play, Rocket, Scissors, Search, Send, Sparkles, Sun, Twitter, Upload, Wand2, Youtube, Zap } from 'lucide-react';
-import './index.css';
+import './index.css';  
   ArrowRight,
   ArrowUpRight,
   Captions,
@@ -847,7 +847,24 @@ export default function App() {
                 href={`mailto:${EMAIL}?subject=Book%20an%20edit`}
                 className="pop mt-6 inline-flex items-center gap-1.5 font-semibold text-[#5B5BD6] transition hover:-translate-y-0.5"
               >
-                Start with an email <ArrowRight className="h-4 w-4" />
+               useEffect(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".ez-bg > *").forEach((el, i) => {
+    gsap.to(el, {
+      y: (i % 2 === 0 ? 200 : -200),
+      rotationZ: i % 2 === 0 ? 20 : -20,
+      ease: "none",
+      scrollTrigger: {
+        trigger: document.body,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+      }
+    });
+  });
+}, []);
+                  Start with an email <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -899,20 +916,4 @@ export default function App() {
         </div>
       )} 
 </div>
- useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.utils.toArray(".ez-bg > *").forEach((el, i) => {
-    gsap.to(el, {
-      y: (i % 2 === 0 ? 200 : -200),
-      rotationZ: i % 2 === 0 ? 20 : -20,
-      ease: "none",
-      scrollTrigger: {
-        trigger: document.body,
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1,
-      }
-    });
-  });
-}, []);
+ 
