@@ -3,8 +3,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, ArrowUpRight, Captions, Check, Clapperboard, Clock, Copy, Film, Instagram, Mail, Moon, Music2, Play, Rocket, Scissors, Search, Send, Sparkles, Sun, Twitter, Upload, Wand2, Youtube, Zap } from 'lucide-react';
 import './index.css';  
-  ArrowRight,
-  ArrowUpRight,
   Captions,
   Check,
   Clapperboard,
