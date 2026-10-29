@@ -255,6 +255,23 @@ export default function App() {
       ? 'dark'
       : 'light'
   );
+   useEffect(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".ez-bg > *").forEach((el, i) => {
+    gsap.to(el, {
+      y: (i % 2 === 0 ? 200 : -200),
+      rotationZ: i % 2 === 0 ? 20 : -20,
+      ease: "none",
+      scrollTrigger: {
+        trigger: document.body,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+      }
+    });
+  });
+}, []);
   const [category, setCategory] = useState<Category>('gaming');
   const [format, setFormat] = useState<Format>('short');
   const [query, setQuery] = useState('');
@@ -847,23 +864,6 @@ export default function App() {
                 href={`mailto:${EMAIL}?subject=Book%20an%20edit`}
                 className="pop mt-6 inline-flex items-center gap-1.5 font-semibold text-[#5B5BD6] transition hover:-translate-y-0.5"
               >
-               useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.utils.toArray(".ez-bg > *").forEach((el, i) => {
-    gsap.to(el, {
-      y: (i % 2 === 0 ? 200 : -200),
-      rotationZ: i % 2 === 0 ? 20 : -20,
-      ease: "none",
-      scrollTrigger: {
-        trigger: document.body,
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1,
-      }
-    });
-  });
-}, []);
                   Start with an email <ArrowRight className="h-4 w-4" />
               </a>
             </div>
