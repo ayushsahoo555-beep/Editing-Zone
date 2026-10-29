@@ -202,3 +202,35 @@ body {
   .floaty, .floaty-slow, .floaty-fast, .eq-bar, .playhead-scan { animation: none; }
   html { scroll-behavior: auto; }
 }
+/* ===== 3D floating background ===== */
+.ez-bg { perspective: 900px; perspective-origin: 50% 40%; }
+.ez-bg > * { transform-style: preserve-3d; will-change: transform, translate, rotate; }
+
+@keyframes ez-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(var(--rot, 0deg));
+  }
+  33% {
+    transform: translate3d(10px, -14px, 40px) rotateX(16deg) rotateY(-20deg) rotateZ(calc(var(--rot, 0deg) + 5deg));
+  }
+  66% {
+    transform: translate3d(-8px, 8px, -30px) rotateX(-12deg) rotateY(18deg) rotateZ(calc(var(--rot, 0deg) - 4deg));
+  }
+}
+
+.ez-bg .ez-floaty,
+.ez-bg .ez-bar {
+  animation: ez-drift var(--dur, 9s) ease-in-out infinite;
+}
+.ez-i1 { --dur: 9s;  }
+.ez-i2 { --dur: 11s; }
+.ez-i3 { --dur: 8s;  }
+.ez-i4 { --dur: 12s; }
+.ez-i5 { --dur: 10s; }
+
+/* bars: keep their tilt via --rot, give each its own rhythm */
+.ez-b1 { --rot: -12deg; --dur: 13s; animation-delay: -2s; transform: none; }
+.ez-b2 { --rot: 9deg;   --dur: 10s; animation-delay: -5s; transform: none; }
+.ez-b3 { --rot: -6deg;  --dur: 14s; animation-delay: -8s; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
