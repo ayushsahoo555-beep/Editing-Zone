@@ -55,66 +55,12 @@ interface Creator {
 }
 
 const CREATORS: Creator[] = [
-  {
-    name: 'Aarav PixelForge',
-    niche: 'Gaming',
-    initials: 'AP',
-    hue: 'from-violet-500 to-indigo-600',
-    followers: '2.4M',
-    youtube: '@AaravPixelForge',
-    instagram: '@aarav.pixelforge',
-    twitter: '@AaravPixelForge',
-  },
-  {
-    name: 'Sana Travels',
-    niche: 'Travel vlogs',
-    initials: 'ST',
-    hue: 'from-orange-400 to-rose-500',
-    followers: '1.1M',
-    youtube: '@SanaTravels',
-    instagram: '@sana.travels',
-    twitter: '@SanaTravels',
-  },
-  {
-    name: 'Rohan Compounding',
-    niche: 'Finance',
-    initials: 'RC',
-    hue: 'from-emerald-400 to-teal-600',
-    followers: '860K',
-    youtube: '@RohanCompounding',
-    instagram: '@rohan.compounding',
-    twitter: '@RohanComp',
-  },
-  {
-    name: 'Meera Long Take',
-    niche: 'Podcasts',
-    initials: 'ML',
-    hue: 'from-fuchsia-500 to-purple-600',
-    followers: '640K',
-    youtube: '@MeeraLongTake',
-    instagram: '@meera.longtake',
-    twitter: '@MeeraLongTake',
-  },
-  {
-    name: 'Kabir Form & Function',
-    niche: 'Fitness',
-    initials: 'KF',
-    hue: 'from-sky-400 to-blue-600',
-    followers: '980K',
-    youtube: '@KabirFormFunction',
-    instagram: '@kabir.formfunction',
-    twitter: '@KabirFormFunc',
-  },
-  {
-    name: 'Lena Learn in Public',
-    niche: 'Education',
-    initials: 'LL',
-    hue: 'from-amber-400 to-orange-500',
-    followers: '1.7M',
-    youtube: '@LenaLearnInPublic',
-    instagram: '@lena.learnsinpublic',
-    twitter: '@LenaLearns',
-  },
+  { name: 'Aarav PixelForge', niche: 'Gaming', initials: 'AP', hue: 'from-violet-500 to-indigo-600', followers: '2.4M', youtube: '@AaravPixelForge', instagram: '@aarav.pixelforge', twitter: '@AaravPixelForge' },
+  { name: 'Sana Travels', niche: 'Travel vlogs', initials: 'ST', hue: 'from-orange-400 to-rose-500', followers: '1.1M', youtube: '@SanaTravels', instagram: '@sana.travels', twitter: '@SanaTravels' },
+  { name: 'Rohan Compounding', niche: 'Finance', initials: 'RC', hue: 'from-emerald-400 to-teal-600', followers: '860K', youtube: '@RohanCompounding', instagram: '@rohan.compounding', twitter: '@RohanComp' },
+  { name: 'Meera Long Take', niche: 'Podcasts', initials: 'ML', hue: 'from-fuchsia-500 to-purple-600', followers: '640K', youtube: '@MeeraLongTake', instagram: '@meera.longtake', twitter: '@MeeraLongTake' },
+  { name: 'Kabir Form & Function', niche: 'Fitness', initials: 'KF', hue: 'from-sky-400 to-blue-600', followers: '980K', youtube: '@KabirFormFunction', instagram: '@kabir.formfunction', twitter: '@KabirFormFunc' },
+  { name: 'Lena Learn in Public', niche: 'Education', initials: 'LL', hue: 'from-amber-400 to-orange-500', followers: '1.7M', youtube: '@LenaLearnInPublic', instagram: '@lena.learnsinpublic', twitter: '@LenaLearns' },
 ];
 
 interface Video {
@@ -131,78 +77,12 @@ interface Video {
 }
 
 const VIDEOS: Video[] = [
-  {
-    id: 'v1',
-    title: 'The clutch that broke the lobby — 40 seconds of chaos',
-    creator: 'Aarav PixelForge',
-    category: 'gaming',
-    format: 'short',
-    gradient: 'linear-gradient(135deg,#6366F1 0%,#8B5CF6 55%,#EC4899 130%)',
-    duration: '0:42',
-    views: '4.2M',
-    retention: '92% avg. view',
-    hook: 'Cold-open kill feed, captions punched in on the beat.',
-  },
-  {
-    id: 'v2',
-    title: '48 hours in Kyoto with zero plans',
-    creator: 'Sana Travels',
-    category: 'vlogs',
-    format: 'short',
-    gradient: 'linear-gradient(135deg,#FB923C 0%,#F43F5E 60%,#7C3AED 135%)',
-    duration: '0:58',
-    views: '2.8M',
-    retention: '88% avg. view',
-    hook: 'Match-cut train doors into alleyways — no dead air.',
-  },
-  {
-    id: 'v3',
-    title: 'Index funds, explained over a cutting chai',
-    creator: 'Rohan Compounding',
-    category: 'finance',
-    format: 'long',
-    gradient: 'linear-gradient(120deg,#059669 0%,#0D9488 55%,#164E63 130%)',
-    duration: '14:22',
-    views: '1.3M',
-    retention: '71% at minute 10',
-    hook: 'Chaptered story arc with a payoff every 90 seconds.',
-  },
-  {
-    id: 'v4',
-    title: 'The Long Take: deep work, honest burnout',
-    creator: 'Meera Long Take',
-    category: 'podcasts',
-    format: 'long',
-    gradient: 'linear-gradient(120deg,#D946EF 0%,#7C3AED 55%,#1E1B4B 135%)',
-    duration: '48:10',
-    views: '920K',
-    retention: '64% completion',
-    hook: 'Three-cam cuts on laughter, silence left in on purpose.',
-  },
-  {
-    id: 'v5',
-    title: 'Fix your squat in one form check',
-    creator: 'Kabir Form & Function',
-    category: 'fitness',
-    format: 'short',
-    gradient: 'linear-gradient(135deg,#38BDF8 0%,#2563EB 60%,#312E81 135%)',
-    duration: '0:37',
-    views: '3.6M',
-    retention: '94% avg. view',
-    hook: 'Freeze-frame arrows land before the mistake happens.',
-  },
-  {
-    id: 'v6',
-    title: 'Statistics, but we are just cooking dinner',
-    creator: 'Lena Learn in Public',
-    category: 'education',
-    format: 'long',
-    gradient: 'linear-gradient(120deg,#F59E0B 0%,#EA580C 55%,#7C2D12 130%)',
-    duration: '18:45',
-    views: '1.9M',
-    retention: '76% at minute 12',
-    hook: 'Every concept gets a kitchen analogy and a recap card.',
-  },
+  { id: 'v1', title: 'The clutch that broke the lobby — 40 seconds of chaos', creator: 'Aarav PixelForge', category: 'gaming', format: 'short', gradient: 'linear-gradient(135deg,#6366F1 0%,#8B5CF6 55%,#EC4899 130%)', duration: '0:42', views: '4.2M', retention: '92% avg. view', hook: 'Cold-open kill feed, captions punched in on the beat.' },
+  { id: 'v2', title: '48 hours in Kyoto with zero plans', creator: 'Sana Travels', category: 'vlogs', format: 'short', gradient: 'linear-gradient(135deg,#FB923C 0%,#F43F5E 60%,#7C3AED 135%)', duration: '0:58', views: '2.8M', retention: '88% avg. view', hook: 'Match-cut train doors into alleyways — no dead air.' },
+  { id: 'v3', title: 'Index funds, explained over a cutting chai', creator: 'Rohan Compounding', category: 'finance', format: 'long', gradient: 'linear-gradient(120deg,#059669 0%,#0D9488 55%,#164E63 130%)', duration: '14:22', views: '1.3M', retention: '71% at minute 10', hook: 'Chaptered story arc with a payoff every 90 seconds.' },
+  { id: 'v4', title: 'The Long Take: deep work, honest burnout', creator: 'Meera Long Take', category: 'podcasts', format: 'long', gradient: 'linear-gradient(120deg,#D946EF 0%,#7C3AED 55%,#1E1B4B 135%)', duration: '48:10', views: '920K', retention: '64% completion', hook: 'Three-cam cuts on laughter, silence left in on purpose.' },
+  { id: 'v5', title: 'Fix your squat in one form check', creator: 'Kabir Form & Function', category: 'fitness', format: 'short', gradient: 'linear-gradient(135deg,#38BDF8 0%,#2563EB 60%,#312E81 135%)', duration: '0:37', views: '3.6M', retention: '94% avg. view', hook: 'Freeze-frame arrows land before the mistake happens.' },
+  { id: 'v6', title: 'Statistics, but we are just cooking dinner', creator: 'Lena Learn in Public', category: 'education', format: 'long', gradient: 'linear-gradient(120deg,#F59E0B 0%,#EA580C 55%,#7C2D12 130%)', duration: '18:45', views: '1.9M', retention: '76% at minute 12', hook: 'Every concept gets a kitchen analogy and a recap card.' },
 ];
 
 const SERVICES = [
@@ -250,7 +130,7 @@ const PROCESS = [
   },
 ];
 
-/* ---------------- 3D CURSOR & SCROLL INTERACTION MANAGER ---------------- */
+/* ---------------- CURSOR GLOW ---------------- */
 
 function CursorGlow() {
   const glowRef = useRef<HTMLDivElement>(null);
@@ -262,12 +142,10 @@ function CursorGlow() {
     let x = -500;
     let y = -500;
     let raf = 0;
-
     const onMove = (e: MouseEvent) => {
       tx = e.clientX;
       ty = e.clientY;
     };
-
     const loop = () => {
       x += (tx - x) * 0.16;
       y += (ty - y) * 0.16;
@@ -279,46 +157,31 @@ function CursorGlow() {
       }
       raf = requestAnimationFrame(loop);
     };
-
     window.addEventListener('mousemove', onMove, { passive: true });
     raf = requestAnimationFrame(loop);
-
     return () => {
       window.removeEventListener('mousemove', onMove);
       cancelAnimationFrame(raf);
     };
   }, []);
 
-  // 3D Parallax & Scroll Interaction for Floating Background Elements
   useEffect(() => {
-    const floatyEls = document.querySelectorAll('.floaty, .floaty-slow, .floaty-fast');
-
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      floatyEls.forEach((el, index) => {
-        const depth = (index + 1) * 0.05;
-        (el as HTMLElement).style.transform = `translate3d(0, ${-scrollY * depth}px, ${scrollY * 0.08}px) rotate(${scrollY * 0.015 * (index % 2 === 0 ? 1 : -1)}deg)`;
-      });
-    };
-
-    const handleMouseMove = (e: MouseEvent) => {
-      const mouseX = (e.clientX / window.innerWidth - 0.5) * 20;
-      const mouseY = (e.clientY / window.innerHeight - 0.5) * 20;
-      floatyEls.forEach((el, index) => {
-        const factor = (index + 1) * 0.15;
-        (el as HTMLElement).style.transform += ` translate3d(${mouseX * factor}px, ${mouseY * factor}px, 0) rotateX(${mouseY * 0.5}deg) rotateY(${mouseX * 0.5}deg)`;
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('mousemove', handleMouseMove, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
+  const elements = document.querySelectorAll('.floating-element');
+  elements.forEach((el) => {
+    el.addEventListener('mousemove', (e) => {
+      const { clientX: x, clientY: y } = e;
+      const { innerWidth: width, innerHeight: height } = window;
+      const xPos = (x / width) - 0.5;
+      const yPos = (y / height) - 0.5;
+      el.style.transform = `perspective(1000px) rotateY(${xPos * 10}deg) rotateX(${yPos * -10}deg)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transition = 'transform 0.5s ease';
+      el.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
+      setTimeout(() => el.style.transition = 'none', 500);
+    });
+  });
+}, []);
   return (
     <div className="pointer-events-none fixed inset-0 z-[5] hidden lg:block" aria-hidden="true">
       <div
@@ -329,7 +192,8 @@ function CursorGlow() {
           top: 0,
           width: 400,
           height: 400,
-          background: 'radial-gradient(200px circle at center, var(--glow-a), var(--glow-b) 40%, transparent 70%)',
+          background:
+            'radial-gradient(200px circle at center, var(--glow-a), var(--glow-b) 40%, transparent 70%)',
           filter: 'blur(24px)',
           borderRadius: '50%',
           transition: 'transform 0.12s linear',
@@ -377,14 +241,16 @@ function useReveal(deps: unknown[]) {
     els.forEach((el) => io.observe(el));
     return () => io.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [deps]);
+  }, deps);
 }
 
 /* ---------------- APP ---------------- */
 
 export default function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() =>
-    typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light'
   );
   const [category, setCategory] = useState<Category>('gaming');
   const [format, setFormat] = useState<Format>('short');
@@ -406,7 +272,8 @@ export default function App() {
     (v) =>
       v.category === category &&
       v.format === format &&
-      (v.title.toLowerCase().includes(query.toLowerCase()) || v.creator.toLowerCase().includes(query.toLowerCase()))
+      (v.title.toLowerCase().includes(query.toLowerCase()) ||
+        v.creator.toLowerCase().includes(query.toLowerCase()))
   );
 
   useReveal([category, format, query, filtered.length]);
@@ -435,7 +302,7 @@ export default function App() {
     <div
       data-safe-area-inset-root
       className="min-h-screen w-full overflow-x-clip text-[var(--text)]"
-      style={{ boxSizing: 'border-box', paddingTop: 'var(--safe-area-inset-top)', perspective: '1200px' }}
+      style={{ boxSizing: 'border-box', paddingTop: 'var(--safe-area-inset-top)' }}
     >
       <CursorGlow />
 
@@ -446,14 +313,7 @@ export default function App() {
         style={{ top: 'var(--safe-area-inset-top)', background: 'var(--header-bg)' }}
       >
         <div className="mx-auto flex h-16 w-full max-w-[1200px] items-center gap-3 px-4 sm:px-6">
-          <a
-            href="#top"
-            className="pop flex items-center gap-2 rounded-full pr-1"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollTo('top');
-            }}
-          >
+          <a href="#top" className="pop flex items-center gap-2 rounded-full pr-1" onClick={(e) => { e.preventDefault(); scrollTo('top'); }}>
             <span className="grid h-9 w-9 place-items-center rounded-[10px] bg-[var(--ink)] text-[var(--bg)]">
               <Clapperboard className="h-5 w-5" />
             </span>
@@ -461,6 +321,7 @@ export default function App() {
               Editing Zone<span className="text-[var(--violet)]">.</span>
             </span>
           </a>
+
           <nav className="ml-6 hidden items-center gap-1 md:flex" aria-label="Primary">
             {[
               ['Work', 'work'],
@@ -477,6 +338,7 @@ export default function App() {
               </button>
             ))}
           </nav>
+
           <div className="ml-auto flex items-center gap-2">
             <button
               onClick={copyEmail}
@@ -519,7 +381,6 @@ export default function App() {
                 WebkitMaskImage: 'radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 75%)',
               }}
             />
-
             {/* timeline ruler with keyframes */}
             <div className="absolute left-[5%] right-[10%] top-[16%] hidden h-px bg-[var(--border)] opacity-30 lg:block">
               <div className="absolute inset-0 flex justify-around">
@@ -528,38 +389,36 @@ export default function App() {
                 <span className=" -mt-1 h-2 w-2 rotate-45 bg-[#D6FF57] opacity-70" style={{ marginLeft: '60%' }} />
               </div>
             </div>
-
             <div className="absolute bottom-[14%] left-[8%] right-[16%] hidden h-px bg-[var(--border)] opacity-20 lg:block">
               <div className="absolute inset-0 flex justify-around">
                 <span className="-mt-1 h-2 w-2 rotate-45 bg-[#D6FF57] opacity-60" />
                 <span className="-mt-1 h-2 w-2 rotate-45 bg-[var(--violet)] opacity-40" style={{ marginLeft: '45%' }} />
               </div>
             </div>
-
             {/* floating clip blocks */}
-            <div className="floaty-slow absolute left-[6%] top-[34%] hidden h-6 w-16 rotate-2 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-20 lg:block will-change-transform" />
-            <div className="floaty absolute right-[7%] top-[24%] hidden h-6 w-20 -rotate-3 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-15 lg:block will-change-transform" />
-            <div className="floaty-fast absolute bottom-[20%] right-[22%] hidden h-6 w-14 rotate-3 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-20 lg:block will-change-transform" />
-
+            <div className="floaty-slow absolute left-[6%] top-[34%] hidden h-6 w-16 rotate-2 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-20 lg:block" />
+            <div className="floaty absolute right-[7%] top-[24%] hidden h-6 w-20 -rotate-3 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-15 lg:block" />
+            <div className="floaty-fast absolute bottom-[20%] right-[22%] hidden h-6 w-14 rotate-3 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-20 lg:block" />
             {/* floating editing icons */}
-            <Scissors className="floaty absolute left-[4%] top-[58%] h-10 w-10 text-[var(--violet)] opacity-[0.07] will-change-transform" />
-            <Film className="floaty-slow absolute right-[5%] top-[52%] h-12 w-12 text-[var(--violet)] opacity-[0.06] will-change-transform" />
-            <Music2 className="floaty-fast absolute bottom-[10%] left-[16%] h-8 w-8 text-[var(--ink)] opacity-[0.06] will-change-transform" />
-            <Clock className="floaty absolute right-[26%] top-[8%] h-8 w-8 text-[var(--ink)] opacity-[0.05] will-change-transform" />
-            <Play className="floaty-slow absolute bottom-[26%] left-[42%] h-8 w-8 text-[var(--violet)] opacity-[0.06] will-change-transform" />
-            <Zap className="floaty-fast absolute right-[40%] top-[64%] h-7 w-7 text-[var(--ink)] opacity-[0.05] will-change-transform" />
+            <Scissors className="floaty absolute left-[4%] top-[58%] h-10 w-10 text-[var(--violet)] opacity-[0.07]" />
+            <Film className="floaty-slow absolute right-[5%] top-[52%] h-12 w-12 text-[var(--violet)] opacity-[0.06]" />
+            <Music2 className="floaty-fast absolute bottom-[10%] left-[16%] h-8 w-8 text-[var(--ink)] opacity-[0.06]" />
+            <Clock className="floaty absolute right-[26%] top-[8%] h-8 w-8 text-[var(--ink)] opacity-[0.05]" />
+            <Play className="floaty-slow absolute bottom-[26%] left-[42%] h-8 w-8 text-[var(--violet)] opacity-[0.06]" />
+            <Zap className="floaty-fast absolute right-[40%] top-[64%] h-7 w-7 text-[var(--ink)] opacity-[0.05]" />
           </div>
 
           <div className="mx-auto grid w-full max-w-[1200px] gap-12 px-4 pb-20 pt-14 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:pt-20">
             <div>
               <div className="reveal inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface)] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-[var(--muted)] shadow-[var(--shadow-soft)]">
-                <Sparkles className="h-3.5 w-3.5 text-[var(--violet)]" /> Video editing studio for creators
+                <Sparkles className="h-3.5 w-3.5 text-[var(--violet)]" />
+                Video editing studio for creators
               </div>
+
               <h1 className="reveal reveal-delay-1 font-display mt-6 text-[42px] font-bold leading-[1.04] tracking-tight sm:text-6xl lg:text-[68px]">
-                Edits that <span className="text-[var(--violet)]">retain.</span> <br />
-                Stories that{' '}
-                <span className="relative inline-block">
-                  convert.{' '}
+                Edits that <span className="text-[var(--violet)]">retain.</span>
+                <br />
+                Stories that <span className="relative inline-block">convert.
                   <span className="absolute -bottom-1 left-0 h-[6px] w-full rounded-full bg-[#D6FF57] opacity-80" aria-hidden="true" />
                 </span>
               </h1>
@@ -578,7 +437,8 @@ export default function App() {
               </div>
 
               <p className="reveal reveal-delay-2 mt-6 max-w-xl text-lg leading-relaxed text-[var(--muted)]">
-                Editing Zone turns raw footage into videos people finish. Retention-first cuts, kinetic captions and packaging that earns the click — for Shorts and long-form alike.
+                Editing Zone turns raw footage into videos people finish. Retention-first cuts,
+                kinetic captions and packaging that earns the click — for Shorts and long-form alike.
               </p>
 
               <div className="reveal reveal-delay-3 mt-8 flex flex-wrap items-center gap-3">
@@ -609,7 +469,8 @@ export default function App() {
                   ))}
                 </div>
                 <p className="text-sm leading-snug text-[var(--muted)]">
-                  Trusted by <strong className="text-[var(--ink)]">40+ creators</strong> <br className="sm:hidden" /> cutting for 8M+ subscribers
+                  Trusted by <strong className="text-[var(--ink)]">40+ creators</strong>
+                  <br className="sm:hidden" /> cutting for 8M+ subscribers
                 </p>
               </div>
             </div>
@@ -624,7 +485,6 @@ export default function App() {
                   <span className="ml-2 truncate text-xs font-medium text-[var(--faint)]">kyoto_vlog_final_v3.mp4</span>
                   <span className="ml-auto rounded-md bg-[var(--field)] px-2 py-0.5 text-[11px] font-semibold text-[var(--muted)]">4K · 9:16</span>
                 </div>
-
                 <div className="relative aspect-video" style={{ background: 'linear-gradient(135deg,#FB923C 0%,#F43F5E 60%,#7C3AED 135%)' }}>
                   <div className="absolute inset-0 grid place-items-center">
                     <span className="grid h-16 w-16 place-items-center rounded-full bg-white/90 text-[#111113] shadow-lg">
@@ -636,7 +496,6 @@ export default function App() {
                     <Captions className="h-3.5 w-3.5" /> CC on
                   </span>
                 </div>
-
                 {/* timeline tracks */}
                 <div className="relative space-y-2 px-4 py-4">
                   <div className="relative h-6 overflow-hidden rounded-md bg-[var(--field)]">
@@ -657,7 +516,6 @@ export default function App() {
                       ))}
                     </div>
                   </div>
-
                   {/* playhead */}
                   <div className="playhead-scan pointer-events-none absolute inset-y-2 w-px bg-[#D6FF57]" aria-hidden="true">
                     <span className="playhead-dot absolute -left-[5px] top-0 h-[11px] w-[11px] rounded-full bg-[#D6FF57] ring-2 ring-black/10" />
@@ -692,21 +550,13 @@ export default function App() {
                   </span>
                   <div className="min-w-0">
                     <h3 className="font-display truncate text-base font-semibold">{c.name}</h3>
-                    <p className="text-sm text-[var(--muted)]">
-                      {c.niche} · {c.followers} followers
-                    </p>
+                    <p className="text-sm text-[var(--muted)]">{c.niche} · {c.followers} followers</p>
                   </div>
                 </div>
                 <div className="mt-4 space-y-1.5 text-sm text-[var(--muted)]">
-                  <p className="flex items-center gap-2">
-                    <Youtube className="h-4 w-4 shrink-0 text-[#FF0000]" /> {c.youtube}
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Instagram className="h-4 w-4 shrink-0 text-[#E1306C]" /> {c.instagram}
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Twitter className="h-4 w-4 shrink-0 text-[var(--violet)]" /> {c.twitter}
-                  </p>
+                  <p className="flex items-center gap-2"><Youtube className="h-4 w-4 shrink-0 text-[#FF0000]" /> {c.youtube}</p>
+                  <p className="flex items-center gap-2"><Instagram className="h-4 w-4 shrink-0 text-[#E1306C]" /> {c.instagram}</p>
+                  <p className="flex items-center gap-2"><Twitter className="h-4 w-4 shrink-0 text-[var(--violet)]" /> {c.twitter}</p>
                 </div>
               </article>
             ))}
@@ -752,13 +602,13 @@ export default function App() {
               ))}
             </div>
             <div className="ml-auto flex rounded-full border border-[var(--border)] bg-[var(--surface)] p-1 shadow-[var(--shadow-soft)]" role="group" aria-label="Filter by format">
-              {[
+              {([
                 ['short', 'Shorts · 9:16'],
                 ['long', 'Long-form · 16:9'],
-              ].map(([f, label]) => (
+              ] as [Format, string][]).map(([f, label]) => (
                 <button
                   key={f}
-                  onClick={() => setFormat(f as Format)}
+                  onClick={() => setFormat(f)}
                   aria-pressed={format === f}
                   className={`pop rounded-full px-4 py-2 text-sm font-semibold transition hover:-translate-y-0.5 ${
                     format === f ? 'bg-[var(--ink)] text-[var(--bg)]' : 'text-[var(--muted)] hover:text-[var(--ink)]'
@@ -779,12 +629,13 @@ export default function App() {
                   <article
                     key={v.id}
                     data-reveal
-                    className={`reveal pop group overflow-hidden rounded-[20px] border border-[var(--border)] bg-[var(--card)] shadow-[var(--shadow-soft)] ${
-                      i === 0 ? 'sm:col-span-2 lg:col-span-1' : ''
-                    }`}
+                    className={`reveal pop group overflow-hidden rounded-[20px] border border-[var(--border)] bg-[var(--card)] shadow-[var(--shadow-soft)] ${i === 0 ? 'sm:col-span-2 lg:col-span-1' : ''}`}
                     style={{ transitionDelay: `${(i % 3) * 80}ms` }}
                   >
-                    <div className={`relative w-full overflow-hidden ${v.format === 'short' ? 'aspect-[9/16] max-h-[420px]' : 'aspect-video'}`} style={{ background: v.gradient }}>
+                    <div
+                      className={`relative w-full overflow-hidden ${v.format === 'short' ? 'aspect-[9/16] max-h-[420px]' : 'aspect-video'}`}
+                      style={{ background: v.gradient }}
+                    >
                       {/* keyframe diamonds */}
                       <span className="absolute left-[18%] top-3 h-2 w-2 rotate-45 bg-white/50" aria-hidden="true" />
                       <span className="absolute left-[55%] top-3 h-2 w-2 rotate-45 bg-[#D6FF57]/80" aria-hidden="true" />
@@ -804,15 +655,21 @@ export default function App() {
                           </div>
                         </div>
                       ) : (
-                        <button onClick={() => setPlayingId(v.id)} className="absolute inset-0 grid place-items-center" aria-label={`Play preview: ${v.title}`}>
+                        <button
+                          onClick={() => setPlayingId(v.id)}
+                          className="absolute inset-0 grid place-items-center"
+                          aria-label={`Play preview: ${v.title}`}
+                        >
                           <span className="grid h-14 w-14 scale-90 place-items-center rounded-full bg-white/90 text-[#111113] opacity-0 shadow-lg transition duration-300 group-hover:scale-100 group-hover:opacity-100">
                             <Play className="ml-0.5 h-6 w-6 fill-current" />
                           </span>
                         </button>
                       )}
-
                       {playing && (
-                        <button onClick={() => setPlayingId(null)} className="absolute right-3 top-3 rounded-full bg-black/55 px-3 py-1.5 text-xs font-semibold text-white">
+                        <button
+                          onClick={() => setPlayingId(null)}
+                          className="absolute right-3 top-3 rounded-full bg-black/55 px-3 py-1.5 text-xs font-semibold text-white"
+                        >
                           Stop
                         </button>
                       )}
@@ -847,15 +704,12 @@ export default function App() {
           ) : (
             <div className="reveal is-visible mt-8 rounded-[20px] border border-dashed border-[var(--border-strong)] bg-[var(--surface-soft)] px-6 py-14 text-center">
               <Film className="mx-auto h-10 w-10 text-[var(--faint)]" />
-              <h3 className="font-display mt-4 text-xl font-semibold">
-                No {format === 'short' ? 'Shorts' : 'long-form'} in {category} match that search
-              </h3>
-              <p className="mx-auto mt-2 max-w-md text-[var(--muted)]">Try clearing the search, or jump to a format we have already shipped for this niche.</p>
+              <h3 className="font-display mt-4 text-xl font-semibold">No {format === 'short' ? 'Shorts' : 'long-form'} in {category} match that search</h3>
+              <p className="mx-auto mt-2 max-w-md text-[var(--muted)]">
+                Try clearing the search, or jump to a format we have already shipped for this niche.
+              </p>
               <button
-                onClick={() => {
-                  setQuery('');
-                  setFormat(format === 'short' ? 'long' : 'short');
-                }}
+                onClick={() => { setQuery(''); setFormat(format === 'short' ? 'long' : 'short'); }}
                 className="pop mt-6 rounded-full bg-[var(--ink)] px-5 py-2.5 text-sm font-semibold text-[var(--bg)] transition hover:-translate-y-0.5"
               >
                 Show {format === 'short' ? 'long-form' : 'Shorts'} instead
@@ -873,9 +727,9 @@ export default function App() {
               <span className="absolute left-1/2 top-[55%] h-2 w-2 -translate-x-1/2 rotate-45 bg-[var(--violet)] opacity-60" />
               <span className="absolute left-1/2 top-[80%] h-2 w-2 -translate-x-1/2 rotate-45 bg-[var(--violet)] opacity-40" />
             </div>
-            <Scissors className="floaty absolute right-[6%] top-10 h-10 w-10 text-[var(--violet)] opacity-[0.06] will-change-transform" />
-            <Music2 className="floaty-slow absolute bottom-10 left-[30%] h-9 w-9 text-[var(--ink)] opacity-[0.05] will-change-transform" />
-            <div className="floaty-fast absolute right-[24%] top-[38%] hidden h-6 w-16 rotate-3 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-15 lg:block will-change-transform" />
+            <Scissors className="floaty absolute right-[6%] top-10 h-10 w-10 text-[var(--violet)] opacity-[0.06]" />
+            <Music2 className="floaty-slow absolute bottom-10 left-[30%] h-9 w-9 text-[var(--ink)] opacity-[0.05]" />
+            <div className="floaty-fast absolute right-[24%] top-[38%] hidden h-6 w-16 rotate-3 rounded-[8px] border border-[var(--border)] bg-[var(--surface)] opacity-15 lg:block" />
           </div>
 
           <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6">
@@ -884,10 +738,12 @@ export default function App() {
               <h2 className="font-display mt-2 text-3xl font-bold tracking-tight sm:text-4xl">What we cut, frame by frame</h2>
               <p className="mt-2 text-[var(--muted)]">Three ways to hand over the timeline and get back videos that hold attention.</p>
             </div>
-
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {SERVICES.map((s, i) => (
-                <article key={s.title} className={`reveal pop rounded-[20px] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)] reveal-delay-${i + 1}`}>
+                <article
+                  key={s.title}
+                  className={`reveal pop rounded-[20px] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)] reveal-delay-${i + 1}`}
+                >
                   <span className="grid h-12 w-12 place-items-center rounded-[14px] bg-[var(--field)] text-[var(--violet)]">
                     <s.icon className="h-6 w-6" />
                   </span>
@@ -915,15 +771,16 @@ export default function App() {
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--violet)]">Process</p>
             <h2 className="font-display mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Raw footage in. Retention out.</h2>
           </div>
-
           <div className="relative mt-10 grid gap-5 md:grid-cols-3">
             <div className="pointer-events-none absolute left-0 right-0 top-10 hidden h-px bg-[var(--border)] md:block" aria-hidden="true">
               <span className="absolute left-[33%] top-1/2 h-2 w-2 -translate-y-1/2 rotate-45 bg-[var(--violet)] opacity-50" />
               <span className="absolute left-[66%] top-1/2 h-2 w-2 -translate-y-1/2 rotate-45 bg-[#D6FF57] ring-1 ring-black/10" />
             </div>
-
             {PROCESS.map((p, i) => (
-              <article key={p.step} className={`reveal pop relative rounded-[20px] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)] reveal-delay-${i + 1}`}>
+              <article
+                key={p.step}
+                className={`reveal pop relative rounded-[20px] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[var(--shadow-soft)] reveal-delay-${i + 1}`}
+              >
                 <div className="flex items-center justify-between">
                   <span className="grid h-12 w-12 place-items-center rounded-[14px] bg-[var(--ink)] text-[var(--bg)]">
                     <p.icon className="h-6 w-6" />
@@ -945,11 +802,11 @@ export default function App() {
                 <Sparkles className="h-3.5 w-3.5" /> Slots open this week
               </p>
               <h2 className="font-display mt-4 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl">
-                Book an edit.<br />
-                Ship today.
+                Book an edit.<br />Ship today.
               </h2>
               <p className="mt-4 max-w-md text-base font-medium leading-relaxed text-black/70">
-                Send one raw video and get a retention-first first cut back in 48 hours. No calls required — everything happens over email.
+                Send one raw video and get a retention-first first cut back in 48 hours.
+                No calls required — everything happens over email.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a
@@ -966,7 +823,6 @@ export default function App() {
                 </button>
               </div>
             </div>
-
             <div className="reveal reveal-delay-2 pop rounded-[20px] bg-white p-6 text-[#111113] shadow-md">
               <h3 className="font-display text-xl font-bold">How it works</h3>
               <ol className="mt-4 space-y-4">
@@ -1005,7 +861,9 @@ export default function App() {
               </span>
               Editing Zone<span className="-ml-2 text-[var(--violet)]">.</span>
             </p>
-            <p className="mt-2 max-w-sm text-sm text-[var(--muted)]">Retention-first video editing for Shorts, YouTube and podcasts.</p>
+            <p className="mt-2 max-w-sm text-sm text-[var(--muted)]">
+              Retention-first video editing for Shorts, YouTube and podcasts.
+            </p>
           </div>
           <nav className="flex flex-wrap gap-2" aria-label="Footer">
             {[
@@ -1014,11 +872,7 @@ export default function App() {
               ['Process', 'process'],
               ['Contact', 'contact'],
             ].map(([label, id]) => (
-              <button
-                key={id}
-                onClick={() => scrollTo(id)}
-                className="pop rounded-full px-3 py-1.5 text-sm font-medium text-[var(--muted)] hover:text-[var(--ink)]"
-              >
+              <button key={id} onClick={() => scrollTo(id)} className="pop rounded-full px-3 py-1.5 text-sm font-medium text-[var(--muted)] hover:text-[var(--ink)]">
                 {label}
               </button>
             ))}
@@ -1040,7 +894,7 @@ export default function App() {
         >
           <Check className="h-4 w-4" /> {toast}
         </div>
-      )}
-    </div>
+      )} 
+</div>
   );
 }
