@@ -147,7 +147,6 @@ body {
 }
 
 /* ---------- FLOATING DECOR ---------- */
-```css
 @keyframes floaty {
   0%, 100% {
     transform: translateY(0) rotateX(0deg) rotateY(0deg);
@@ -156,7 +155,6 @@ body {
     transform: translateY(-15px) rotateX(2deg) rotateY(-1deg);
   }
 }
-```
 .floaty { animation: floaty 6s ease-in-out infinite; }
 .floaty-slow { animation: floaty 7.5s ease-in-out infinite; }
 .floaty-fast { animation: floaty 5s ease-in-out infinite; }
