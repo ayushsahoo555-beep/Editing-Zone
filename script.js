@@ -165,6 +165,23 @@ function CursorGlow() {
     };
   }, []);
 
+  useEffect(() => {
+  const elements = document.querySelectorAll('.floating-element');
+  elements.forEach((el) => {
+    el.addEventListener('mousemove', (e) => {
+      const { clientX: x, clientY: y } = e;
+      const { innerWidth: width, innerHeight: height } = window;
+      const xPos = (x / width) - 0.5;
+      const yPos = (y / height) - 0.5;
+      el.style.transform = `perspective(1000px) rotateY(${xPos * 10}deg) rotateX(${yPos * -10}deg)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transition = 'transform 0.5s ease';
+      el.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
+      setTimeout(() => el.style.transition = 'none', 500);
+    });
+  });
+}, []);
   return (
     <div className="pointer-events-none fixed inset-0 z-[5] hidden lg:block" aria-hidden="true">
       <div
@@ -877,7 +894,7 @@ export default function App() {
         >
           <Check className="h-4 w-4" /> {toast}
         </div>
-      )}
-    </div>
+      )} 
+</div>
   );
 }
