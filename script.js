@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import {
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ArrowRight, ArrowUpRight, Captions, Check, Clapperboard, Clock, Copy, Film, Instagram, Mail, Moon, Music2, Play, Rocket, Scissors, Search, Send, Sparkles, Sun, Twitter, Upload, Wand2, Youtube, Zap } from 'lucide-react';
+import './index.css';
   ArrowRight,
   ArrowUpRight,
   Captions,
@@ -896,5 +899,20 @@ export default function App() {
         </div>
       )} 
 </div>
-  );
-}
+ useEffect(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".ez-bg > *").forEach((el, i) => {
+    gsap.to(el, {
+      y: (i % 2 === 0 ? 200 : -200),
+      rotationZ: i % 2 === 0 ? 20 : -20,
+      ease: "none",
+      scrollTrigger: {
+        trigger: document.body,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+      }
+    });
+  });
+}, []);
