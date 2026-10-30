@@ -455,12 +455,6 @@ export default function App() {
               </p>
 
               <div className="reveal reveal-delay-3 mt-8 flex flex-wrap items-center gap-3">
-                <a
-                  href={`mailto:${EMAIL}?subject=Book%20an%20edit`}
-                  className="pop inline-flex items-center gap-2 rounded-full bg-[var(--ink)] px-6 py-3.5 text-base font-semibold text-[var(--bg)] transition hover:-translate-y-0.5"
-                >
-                  Book an Edit <ArrowRight className="h-5 w-5" />
-                </a>
                 <button
                   onClick={() => scrollTo('work')}
                   className="pop inline-flex items-center gap-2 rounded-full border border-[var(--border-strong)] bg-[var(--surface)] px-6 py-3.5 text-base font-semibold transition hover:-translate-y-0.5"
