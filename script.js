@@ -25,7 +25,6 @@ import {
   Youtube,
   Zap,
 } from 'lucide-react';
-import './index.css';
 
 const EMAIL = 'ayushsahoo555@gmail.com';
 
