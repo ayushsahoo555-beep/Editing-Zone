@@ -374,12 +374,7 @@ export default function App() {
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
-            <a
-              href={`mailto:${EMAIL}?subject=Book%20an%20edit`}
-              className="pop hidden items-center gap-1.5 rounded-full bg-[var(--ink)] px-4 py-2.5 text-sm font-semibold text-[var(--bg)] transition hover:-translate-y-0.5 sm:flex"
-            >
-              Book an Edit <ArrowUpRight className="h-4 w-4" />
-            </a>
+          
           </div>
         </div>
       </header>
