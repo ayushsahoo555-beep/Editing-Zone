@@ -823,10 +823,6 @@ export default function App() {
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a
-                  href={`mailto:${EMAIL}?subject=Book%20an%20edit`}
-                  className="pop inline-flex items-center gap-2 rounded-full bg-[#111113] px-6 py-3.5 text-base font-semibold text-white transition hover:-translate-y-0.5"
-                >
-                  <Send className="h-5 w-5" /> {EMAIL}
                 </a>
                 <button
                   onClick={copyEmail}
