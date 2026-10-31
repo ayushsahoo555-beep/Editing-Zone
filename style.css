@@ -135,3 +135,67 @@ body{
   }
   html{ scroll-behavior:auto; }
 }
+/* ---- New Split Box Styles (Mobile vs Web) ---- */
+.split-box-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 32px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.split-sub-box {
+  background: var(--card, #171717);
+  border: 1px solid var(--border, #262626);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.split-tag {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  display: block;
+  color: var(--muted, #a3a3a3);
+}
+
+.split-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: var(--ink, #f5f5f5);
+}
+
+.split-desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--muted, #a3a3a3);
+  margin: 0 0 20px 0;
+}
+
+.mailto-btn-custom {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg, #0a0a0a);
+  border: 1px solid var(--border-light, #2a2a2a);
+  color: var(--ink, #f5f5f5);
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .split-box-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
